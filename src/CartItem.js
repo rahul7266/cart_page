@@ -33,12 +33,12 @@ import React from 'react';
   // }
   //  render () {
   const CartItem=(props)=>{
-    const {price,title,qty}=props.product;
+    const {price,title,qty,img}=props.product;
     return (
      
       <div className="cart-item">
         <div className="left-block">
-          <img style={styles.image} />
+           <img src={img} style={styles.image} />
         </div>
         <div className="right-block">
           <div style={ { fontSize: 25 } }>{title}</div>
@@ -59,7 +59,7 @@ import React from 'react';
              onClick={()=>props.onDecreaseQuantity(props.product)}
            /> 
            <img 
-             src="https://cdn-icons.flaticon.com/png/512/2907/premium/2907762.png?token=exp=1648097253~hmac=7c788fe12b669aa2e28857b45b200b98"
+             src="https://cdn-icons.flaticon.com/png/512/484/premium/484662.png?token=exp=1650186330~hmac=a58d7fb45e7e7d8249d563aa10892a03"
              alt="delete"  
              className="action-icons"
              onClick={()=>props.onDelete(props.product)}
